@@ -73,6 +73,7 @@ const Search = () => {
       clearTimeout(searchSetTime.current);
     }
 
+    // debounce 적용
     searchSetTime.current = setTimeout(() => {
       setIsSearching(false);
       refetch();

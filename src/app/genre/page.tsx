@@ -134,7 +134,7 @@ const WebtoonGenrePage = () => {
       return nextPage <= Math.ceil(lastPage.count / 20) ? nextPage : undefined;
     },
     initialPageParam: 0,
-    staleTime: Infinity,
+    staleTime: 1000 * 60 * 5,
     enabled: true,
   });
 

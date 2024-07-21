@@ -1,5 +1,5 @@
 import { fetchToBePaidWebtoonList } from '@/api/webtoon';
-import HomePage from './home';
+import HomePage from './home/home';
 
 const fetchTobePaidWebtoosBySSR = async () => {
   const response = await fetchToBePaidWebtoonList();
