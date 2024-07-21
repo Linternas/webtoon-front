@@ -1,0 +1,31 @@
+.header-wrapper {
+  padding: 0 16px;
+  height: 56px;
+  min-height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p,
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  h1 {
+    font-family: 'ChangwonDangamAsac';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #2c3131;
+  }
+}
