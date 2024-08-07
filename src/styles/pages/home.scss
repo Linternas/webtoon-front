@@ -1,0 +1,548 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.slider-wrapper {
+  @media (min-width: 640px) {
+    .main-slider-wrapper {
+      .img {
+        width: 60% !important;
+      }
+
+      .img2 {
+        width: 60% !important;
+      }
+    }
+  }
+
+  .main-slider-wrapper {
+    width: 100%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+
+    .img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 100%;
+      z-index: 1;
+    }
+
+    .img2 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 100%;
+      z-index: 2;
+    }
+
+    .background_shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 40.1%);
+      z-index: 5;
+    }
+
+    .save_info {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      z-index: 7;
+
+      .text_price {
+        /* M/20px/bold */
+        justify-content: flex-end;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+
+        color: #2c3131;
+      }
+
+      .text_date {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        color: #2c3131;
+
+        display: flex;
+        flex-flow: row-reverse;
+      }
+    }
+
+    .webtoon_info {
+      position: absolute;
+      padding: 0 8px;
+      height: 28px;
+      right: 16px;
+      bottom: 17px;
+
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+
+      img {
+        width: 12px;
+        height: 20px;
+        position: static;
+        margin-left: 2px;
+        margin-right: 7px;
+      }
+
+      p.webtoon_title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        text-transform: uppercase;
+
+        color: #000;
+      }
+    }
+  }
+
+  .slider_item {
+    background-color: aqua;
+  }
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  .slick-dots li {
+    width: 100px !important;
+    margin: 0 !important;
+    justify-content: flex-end !important;
+    display: flex !important;
+  }
+
+  .slick-active {
+    a {
+      div {
+        div {
+          background-color: black !important;
+        }
+      }
+    }
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slider-bar {
+    float: right;
+
+    .item {
+      width: 100px;
+      height: 4px;
+      background-color: #ededed;
+    }
+
+    .item--active {
+      width: 100px;
+      height: 4px;
+      background-color: black;
+    }
+  }
+
+  .slider-container {
+    max-width: 640px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slick-slider {
+    max-width: 640px;
+    width: 100%;
+    overflow: hidden !important;
+  }
+
+  .main-slider-empty {
+    height: 340px;
+    position: relative;
+
+    p {
+      font-family: 'Pretendard';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+
+      display: flex;
+      align-items: center;
+
+      /* black/100 */
+
+      color: #2c3131;
+
+      padding-top: 75px;
+      justify-content: center;
+    }
+
+    img {
+      position: absolute;
+      right: 21.74px;
+      top: 171px;
+    }
+  }
+}
+
+.nav-toggle-wrapper {
+  display: flex;
+  height: 48px;
+  cursor: pointer;
+  border-bottom: 1px solid #000000;
+  margin-top: 24px;
+
+  .nav-item {
+    width: 50%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggled {
+    width: 120px;
+    height: 48px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: white;
+    background: #000000;
+  }
+
+  .normal {
+    width: 120px;
+    height: 48px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    opacity: 0.3;
+
+    color: #000000;
+  }
+}
+
+.fee-based-payment-wrapper {
+  margin-top: 22px;
+
+  p.title {
+    margin-bottom: 4px;
+    padding: 0 16px 0 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+}
+
+p.webtoon-list-title {
+  margin-bottom: 4px;
+  padding: 24px 16px 0 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.bottom-action-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.calendar-webtoon-genre-item {
+  height: 96px;
+  border-bottom: 1px solid #e5e5ec;
+  margin-top: 8px;
+  float: right;
+  display: flex;
+  width: 91%;
+
+  position: relative;
+  overflow: hidden;
+
+  .ic-censored {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 5px;
+    z-index: 100;
+  }
+
+  .main-img-section {
+    position: relative;
+    width: 80px;
+    min-width: 80px;
+    overflow: hidden;
+
+    img.background-color {
+      z-index: 0;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: red;
+      margin: 8px 16px 8px 8px;
+    }
+
+    div.background {
+      // background-color: rgb(152, 184, 200);
+      z-index: 1;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      margin: 8px 16px 8px 0px;
+    }
+
+    img.background {
+      width: 80px;
+
+      z-index: 2;
+      min-width: 80px;
+      margin: 8px 16px 8px 0px;
+      position: absolute;
+      /* width: 80px; */
+      overflow: hidden;
+      height: 80px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    img.background2 {
+      z-index: 1;
+      min-width: 80px;
+      height: 80px;
+      margin: 8px 16px 8px 0px;
+      position: absolute;
+
+      width: 80px;
+      min-width: 80px;
+      margin: 8px 16px 8px 0px;
+      position: absolute;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .content {
+    margin: 12px 0;
+    margin-left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title_wrapper {
+      width: 100%;
+      justify-content: space-between;
+
+      .img-section {
+        margin-right: 16px;
+
+        img {
+          margin-left: 6px;
+        }
+      }
+
+      .naver {
+        width: 17px;
+        height: 20px;
+        background-color: #31c52e;
+        margin-right: 16px;
+
+        p {
+          font-weight: bold;
+          margin-top: 1px;
+          margin-left: 1px;
+          height: 100%;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .kakao {
+        width: 17px;
+        height: 20px;
+        background-color: #000000;
+        margin-right: 16px;
+
+        p {
+          font-weight: bold;
+          margin-top: 1px;
+          margin-left: 1px;
+          height: 100%;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .site-chip {
+      width: 48px;
+      height: 20px;
+      background: #ffffff;
+      border: 1px solid #e9eaee;
+      box-sizing: border-box;
+      border-radius: 10px;
+
+      p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        color: #31c52e;
+      }
+    }
+
+    .webtoon-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    .webtoon-d-day {
+      margin-left: auto;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    .webtoon-writer {
+      margin-top: 16px;
+      height: 20px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      color: #abb4bf;
+    }
+
+    .linked {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: 4px;
+      color: #ff6262;
+
+      text-transform: uppercase;
+    }
+
+    .star {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: 4px;
+      color: #ff6262;
+
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 1px;
+      height: 12px;
+      background: #c4c4c4;
+
+      margin: 0 9px;
+    }
+  }
+}
